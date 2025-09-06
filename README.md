@@ -1,28 +1,78 @@
-# GamifiedPortfolio
+# Gamified Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+Welcome to the interactive, gamified portfolio of **Aditya Dilip Gurav**!  
+This project showcases my journey, skills, and achievements in a unique, level-based format built with Angular and TailwindCSS.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Gamified Experience:** Unlock sections as you progress through the portfolio.
+- **Modern UI:** Neon-themed, responsive design powered by TailwindCSS.
+- **Projects & Experience:** Flip cards and detailed logs of my work.
+- **Gallery:** Visual highlights from my journey.
+- **Education & Contact:** Trace my origins and connect with me.
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular](https://angular.dev/) 18+
+- [TailwindCSS](https://tailwindcss.com/)
+- [Firebase Hosting](https://firebase.google.com/)
+- TypeScript, SCSS
 
-## Build
+## 📦 Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Install dependencies:**
 
-## Running unit tests
+   ```sh
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Run the development server:**
 
-## Running end-to-end tests
+   ```sh
+   npm start
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   Visit [http://localhost:4200](http://localhost:4200) in your browser.
 
-## Further help
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# aditya-gurav
+## 🧪 Testing
+
+Run unit tests with:
+
+```sh
+npm test
+```
+
+## 🌐 Deployment
+
+The app is configured for Firebase Hosting.  
+To deploy, use:
+
+```sh
+firebase deploy
+```
+
+## 📁 Project Structure
+
+- `src/app/` – Main Angular components and configuration
+- `src/assets/` – Images and static files
+- `public/` – Public assets (favicon, icons)
+- `src/styles.scss` – Global styles
+- `tailwind.config.js` – TailwindCSS configuration
+
+## 👤 Author
+
+**Aditya Dilip Gurav**
+
+- [LinkedIn](https://www.linkedin.com/in/adiiidg)
+- [GitHub](https://github.com/adiidg)
+- [Portfolio](https://aditya-gurav.web.app)
+
+---
+
+> Unlock my story, level by level.  
+> Let’s connect and build

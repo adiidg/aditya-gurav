@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-dark-bg text-light-gray font-sans overflow-x-hidden;
+    background-image: radial-gradient(#4b5563 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00f6ff;
+    border-radius: 10px;
+    border: 2px solid #0a0a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff00ff;
+}
+
+.game-button {
+    @apply px-8 py-3 font-mono uppercase tracking-widest text-lg border-2 border-primary-neon rounded-md transition-all duration-300 ease-in-out;
+    @apply hover:bg-primary-neon hover:text-dark-bg;
+    box-shadow: 0 0 20px rgba(0, 246, 255, 0);
+    text-shadow: 0 0 5px #00f6ff;
+
+    &:hover {
+        box-shadow: 0 0 20px #00f6ff;
+    }
+}
+
+.section-container {
+    @apply w-full max-w-5xl mx-auto py-12 px-6;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-title {
+    @apply text-4xl md:text-5xl font-mono uppercase text-center mb-12 tracking-[0.2em];
+    color: #00f6ff;
+    text-shadow: 0 0 10px #00f6ff, 0 0 5px white;
+}
+
+.neon-border {
+    border: 2px solid #00f6ff;
+    box-shadow: 0 0 10px #00f6ff, inset 0 0 10px #00f6ff;
+}
+
+.neon-card {
+    @apply bg-dark-bg/50 backdrop-blur-sm p-6 rounded-lg transition-all duration-300;
+    border: 1px solid rgba(0, 246, 255, 0.5);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(255, 0, 255, 0.2);
+        border-color: #00f6ff;
+    }
+}
+
+.skill-badge {
+    @apply inline-block bg-primary-neon/10 text-primary-neon border border-primary-neon/50 rounded-full px-4 py-1 text-sm font-mono transition-all duration-300;
+    @apply hover:bg-primary-neon hover:text-dark-bg hover:scale-110;
+}
